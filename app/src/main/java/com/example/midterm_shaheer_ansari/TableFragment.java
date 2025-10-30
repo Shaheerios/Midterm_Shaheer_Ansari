@@ -66,7 +66,6 @@ public class TableFragment extends Fragment {
         );
         listViewTable.setAdapter(tableAdapter);
 
-        // Event Listeners
         buttonGenerate.setOnClickListener(v -> generateTable(editTextNumber.getText().toString()));
         listViewTable.setOnItemClickListener((parent, v, position, id) -> showDeleteConfirmationDialog(position));
 
@@ -122,7 +121,6 @@ public class TableFragment extends Fragment {
                 .show();
     }
 
-    // Bonus Feature: Clear All
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         menu.add(Menu.NONE, ACTION_CLEAR_ALL, Menu.NONE, "Clear All");
