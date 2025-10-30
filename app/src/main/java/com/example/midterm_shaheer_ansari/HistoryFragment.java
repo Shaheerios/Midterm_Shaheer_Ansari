@@ -35,11 +35,10 @@ public class HistoryFragment extends Fragment {
 
         ListView listViewHistory = view.findViewById(R.id.listViewHistory);
 
-        // Get unique numbers from the ViewModel
+
         Set<Integer> historySet = viewModel.getHistoryNumbers().getValue();
         List<Integer> historyList = new ArrayList<>(historySet);
 
-        // Optional: Sort the list for clean display
         Collections.sort(historyList);
 
         ArrayAdapter<Integer> historyAdapter = new ArrayAdapter<>(
