@@ -19,7 +19,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.midterm_shaheer_ansari.SharedViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +56,6 @@ public class TableFragment extends Fragment {
         Button buttonHistory = view.findViewById(R.id.buttonHistory);
         listViewTable = view.findViewById(R.id.listViewTable);
 
-        // Load saved state from ViewModel
         currentTableList = new ArrayList<>(viewModel.getCurrentTable().getValue());
 
         // Setup ListView Adapter
