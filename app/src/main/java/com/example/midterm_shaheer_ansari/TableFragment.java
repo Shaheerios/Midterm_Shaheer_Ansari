@@ -93,7 +93,6 @@ public class TableFragment extends Fragment {
 
             tableAdapter.notifyDataSetChanged();
 
-            // Update ViewModel
             viewModel.setCurrentTable(new ArrayList<>(currentTableList));
             viewModel.addHistoryNumber(number);
 
